@@ -18,7 +18,7 @@ function App() {
   };
 
   let caldo = [
-    // Your data here
+    // Tus datos aquí
   ];
 console.log(data)
   return (
@@ -34,31 +34,31 @@ console.log(data)
               type={'text'}
               name={'nombre'}
               value={data.nombre}
-              placeholder='ingrese nombre'
-              onchange={(value) => handleInputChange('nombre', value)}
+              placeholder='Ingrese nombre'
+              onchange={handleInputChange}
             />
             <Validation
               type={'email'}
               name={'correo'}
               value={data.correo}
-              placeholder='ingrese correo'
-              onchange={(value) => handleInputChange('correo', value)}
+              placeholder='Ingrese correo'
+              onchange={handleInputChange}
             />
             <Validation
               type={'password'}
               name={'password'}
               value={data.password}
-              placeholder='ingrese contraseña'
-              onchange={(value) => handleInputChange('password', value)}
+              placeholder='Ingrese contraseña'
+              onchange={handleInputChange}
             />
             <Validation
               type={'select'}
               name={'descripcion'}
               value={data.descripcion}
-              placeholder='seleccione una opción'
+              placeholder='Seleccione una opción'
               isSelect={false}
               datos={caldo}
-              onchange={(value) => handleInputChange('descripcion', value)}
+              onchange={handleInputChange}
             />
             <button>Iniciar Sesion</button>
           </form>

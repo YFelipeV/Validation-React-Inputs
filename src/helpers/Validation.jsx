@@ -21,8 +21,10 @@ function Validation({ type, value, placeholder, isSelect = true, datos = null, n
     };
 
     const handleChange = (e) => {
-        setInputValue(e.target.value);
-    };
+        const newValue = e.target.value;
+        onchange(name, newValue); // Envía el nombre del campo y el nuevo valor al componente principal
+        setInputValue(newValue); // Actualiza el valor local en Validation
+      };
 
     return (
         <>
